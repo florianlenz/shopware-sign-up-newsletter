@@ -1,0 +1,25 @@
+{% sw_extends '@Storefront/storefront/component/account/register.html.twig' %}
+
+{% block component_account_register_personal_account_fields %}
+    {{ parent() }}
+    {% if shopware.config.FleRegistrationNewsletterSignup.config.showOnRegistrationPage %}
+        <div class="form-row">
+            <div class="form-group col-sm-12">
+                <div class="custom-control custom-checkbox">
+                    <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        name="newsletter"
+                        id="newsletter"
+                        {% if shopware.config.FleRegistrationNewsletterSignup.config.checkedByDefault %}
+                            checked
+                        {% endif %}
+                    >
+                    <label class="custom-control-label" for="newsletter">
+                        {{ "fle.registrationNewsletterSignup.registrationLabel"|trans|sw_sanitize }}
+                    </label>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,30 @@
+{
+  "name": "fle/shopware-registration-newsletter-signup",
+  "description": "Registration Newsletter on Sign Up for Shopware 6",
+  "version": "0.1.0",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Fle\\RegistrationNewsletterSignup\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Fle\\RegistrationNewsletterSignup\\FleRegistrationNewsletterSignup",
+    "label": {
+      "de-DE": "Registrierung Newsletter Anmeldung",
+      "en-GB": "Registration Newsletter SignUp"
+    },
+    "description": {
+      "de-DE": "Dieses Plugin ermöglicht es, dem Kunden der sich registriert die Möglichkeit zu geben sich während der Registrierung zum Newsletter anzumelden.",
+      "en-GB": "This plugin allows to give the customer who registers the possibility to subscribe to the newsletter during registration."
+    }
+  },
+  "require": {
+    "shopware/core": "~6.3.0"
+  },
+  "conflict": {
+    "shopware/storefront": "<6,>=7",
+    "shopware/administration": "<6,>=7"
+  }
+}

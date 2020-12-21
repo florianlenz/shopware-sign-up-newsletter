@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+
+        <title>Basic Configuration</title>
+        <title lang="de-DE">Grundeinstellungen</title>
+
+        <input-field type="bool">
+            <name>showOnRegistrationPage</name>
+            <label>Show on registration page</label>
+            <label lang="de-DE">Auf "Anmeldeseite" anzeigen</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>checkedByDefault</name>
+            <label>Signing up for newsletter is checked by default</label>
+            <label lang="de-DE">"Zum newsletter anmelden" ist standartmäßig ausgewählt</label>
+        </input-field>
+
+    </card>
+
+</config>

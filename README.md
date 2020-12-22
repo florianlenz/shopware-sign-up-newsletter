@@ -17,6 +17,8 @@
 ## Background
 This plugin offers the possibility to configure a Shopware store so that the buyer can directly subscribe to the newsletter when he registers.
 
+![](assets/screenshot_plugin_in_action.png)
+
 ## Install
 > TBD - publish to packagist.org
 
